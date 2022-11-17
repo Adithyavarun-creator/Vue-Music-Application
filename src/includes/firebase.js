@@ -19,9 +19,9 @@ const db = firebase.firestore();
 const storage = firebase.storage();
 
 //for persisting storage in db due to slow internet connections
-db.enablePersistence().catch((error) => {
-  console.log(`Firebase persistence error ${error.code}`);
-});
+// db.enablePersistence().catch((error) => {
+//   console.log(`Firebase persistence error ${error.code}`);
+// });
 
 const usersCollection = db.collection("users");
 const songsCollection = db.collection("songs");
